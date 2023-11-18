@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+require('dotenv').config()
 const port = process.env.PORT || 5000;
 const viewsPath = path.join(__dirname, "./src/views")
 const publicFilePath = path.join(__dirname, "./public")
